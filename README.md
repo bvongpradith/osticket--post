@@ -2,14 +2,14 @@
 <img src="https://www.synaxiom.com/wp-content/uploads/2016/06/osticket.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket - Prerequisites and Overview</h1>
-In this tutorial/lab we are going to continue the configuration of osTicket, if you haven't already completed the installation and setup go ahead and go back to my previous tutorial linked below.</p>
+<h1>osTicket - Prerequisites</h1>
+This tutorial is a continuation of the installation of osTicket which is linked below if you have not completed it yet.</p>
 
-- [osTicket: Prerequisites and Installation](https://github.com/jacksonmalms/osticket-prereqs)
+- [osTicket: Prerequisites and Installation](https://github.com/bvongpradith/osticket-prereqs)
 
-<h2>Environments and Technologies Used</h2>
+<h2>Environments and Technologies Used in Tutorial</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
+- Microsoft Azure
 - Remote Desktop
 - Internet Information Services (IIS)
 - osTicket
@@ -19,86 +19,86 @@ In this tutorial/lab we are going to continue the configuration of osTicket, if 
 
 - Windows 10</b> (21H2)
 
-<h2>High Level List of Steps</h2>
+<h2>Steps</h2>
 
 - Configure Roles
 - Configure Departments
 - Configure Teams
 - Download and install the Rewrite Module
 - Allow anyone to create tickets
-- Configure Agents (workers)
+- Configure Agents (employees)
 - Configure Users (customers)
 - Configure SLAs
 - Configure Help Topics
 
-<h2>Configuration Visual Walkthrough</h2>
+<h2>Detailed Steps</h2>
 
 <p>
-<img src="https://i.imgur.com/970aBAE.jpg"/>
+<img src="https://i.imgur.com/yl8X1a0.png"/>
 </p>
 <p>
-First log into osTicket with the credentials that we set for the admin user in the previous tutorial.
+We'll first go to the login (http://localhost/osTicket/scp/login.php) to login with the admin credentials from the previous tutorial.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/smoRDS8.png"/>
+<img src="https://i.imgur.com/dmMYsqY.png"/>
 </p>
 <p>
-Then go to the admin panel, that button will switch from "Admin Panel" to "Agent Panel" when you get to the admin panel.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/B6eLqcE.png"/>
-</p>
-<p>
-Then go to Agents -> Roles -> Add New Role
+Next, click "Admin Panel" at the top right of the screen. The button will change to "Agent Panel" when you navigate inside the admin panel.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/dKzlDpy.png"/>
+<img src="https://i.imgur.com/vUsbc7t.png"/>
 </p>
 <p>
-Now name the new role "Supreme Admin" and select all permissions for Tickets, Tasks, and Knowledgebase, then click save.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/fujykeu.png"/>
-</p>
-<p>
-then go to the departments panel and add a new department.
+Then go to Agents > Roles > Add New Role
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/awbVYtb.png"/>
+<img src="https://i.imgur.com/MDQsMQh.png"/>
 </p>
 <p>
-Name it "SysAdmins" and hit create.
-</p>
-<br />
-
-<p>
-<img src="https://i.imgur.com/px2oFmM.png"/>
-</p>
-<p>
-Now go to the Teams panel and hit add new team, then name it "Level II Support" and create team.
+Now, name the role to "Supreme Admin" and then allow all permissions in the next tab. Click "Add Role".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/55PgdlN.png"/>
+<img src="https://i.imgur.com/L2QivIM.png"/>
 </p>
 <p>
-Now go to Settings -> Users -> * Settings and make sure the authentication settings make the screenshot above.
+Navigate to "Departments" and then click "Add New Department".
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/zgW8RYK.png"/>
+<img src="https://i.imgur.com/iEfRDDl.png"/>
+</p>
+<p>
+Name the department to "SysAdmins" and then press "Create Dept".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/cIVVFxB.png"/>
+</p>
+<p>
+Head to the "Teams" panel and click "Create New Team". Name the new team "Level II Support" and press create.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/RNCgiNh.png"/>
+</p>
+<p>
+Afterwards, go to "Settings" > Users > Make sure the box for registration requirement is not checked > make the method public > Save Changes.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/ovR6mDa.png"/>
 </p>
 <p>
 Now go into the agents panel and add new agent.
@@ -106,28 +106,29 @@ Now go into the agents panel and add new agent.
 <br />
 
 <p>
-<img src="https://i.imgur.com/VbdAyYo.png"/>
-<img src="https://i.imgur.com/bOpYXec.png"/>
+<img src="https://i.imgur.com/zd2iMRm.png"/>
+<img src="hthttps://i.imgur.com/agz55hK.png"/>
+<img src="hthttps://i.imgur.com/JIuH5J6.png"/>
 </p>
 <p>
-Now add the following accounts:
+Create these accounts:
 
-- Name:	Jane Doe
-- Email Address: jane.doe@osticket.com
-- Username: jane.doe
-- Set the password to "Password1" (you might need to uncheck that send agent password reset email box)
-- Go to Access and set the department to SysAdmins and select Supreme Admin for the role.
-- Go to the teams section and select Level II Support, then create.
+1 Name:	Jane Doe
+2 Email Address: jane.doe@osticket.com
+3 Username: jane.doe
+4 Set the password to "Password1"
+5 Go to Access and set the department to SysAdmins and select Supreme Admin for the role.
+6 Go to the teams section and select Level II Support, then create.
   
-Then repeat those same exact steps for John Doe.
+After, create a second account for " John Doe"
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/OOQdVmW.png"/>
+<img src="https://i.imgur.com/rSCzZwo.png"/>
 </p>
 <p>
-Then go to Agent panel -> Users -> Add User
+Then go to Agent panel > Users > Add User
 </p>
 <br />
 
