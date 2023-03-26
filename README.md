@@ -133,32 +133,32 @@ Then go to Agent panel > Users > Add User
 <br />
 
 <p>
-<img src="https://i.imgur.com/6uBqz01.png"/>
+<img src="https://i.imgur.com/xJAOXFN.png"/>
 </p>
 <p>
-Then add the following users:
+ Add the following users:
  
-- Email Address: karen@osticket.com
-- Full Name: Karen
-  
 - Email Address: ken@osticket.com
 - Full Name: Ken
+  
+- Email Address: karen@osticket.com
+- Full Name: Karen
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/mdD3pzb.png"/>
+<img src="https://i.imgur.com/Wely6u8.png"/>
 </p>
 <p>
-Then go to Admin Panel -> Manage -> SLA -> Add New SLA Plan
+Head to Admin Panel > Manage > SLA > Add New SLA Plan.
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/AFDwYsq.png"/>
+<img src="https://i.imgur.com/mCNUD9g.png"/>
 </p>
 <p>
-Now add the following SLAs
+Next, add the following SLAs
   
 - SEV-A with a grace period of 1 hour, and a 24/7 schedule
 - SEV-B with a grace period of 4 hours, and a 24/7 schedule
@@ -167,16 +167,12 @@ Now add the following SLAs
 <br />
 
 <p>
-<img src="https://i.imgur.com/YL0FxCx.png"/>
+<img src="https://i.imgur.com/vQ1k6as.png"/>
 </p>
 <p>
-Now go to "Help Topics" and add the following help topics:
+Now, navigate to "Help Topics" and add the following help topics:
   
 - Business Critical Outage
 - Personal Computer Issues
 - Equipment Request
 - Password Reset
-  
-Congratulations! You have made it to the end of this part of the tutorial, the next one we will explore tickets and the ticket lifecycle (link to that is listed below)
-  
-- [osTicket: Ticket Lifecycle Examples](https://github.com/jacksonmalms/ticket-lifecycle)
