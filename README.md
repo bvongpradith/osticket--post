@@ -113,12 +113,12 @@ Now go into the agents panel and add new agent.
 <p>
 Create these accounts:
 
-1 Name:	Jane Doe
-2 Email Address: jane.doe@osticket.com
-3 Username: jane.doe
-4 Set the password to "Password1"
-5 Go to Access and set the department to SysAdmins and select Supreme Admin for the role.
-6 Go to the teams section and select Level II Support, then create.
+- Name:	Jane Doe
+- Email Address: jane.doe@osticket.com
+- Username: jane.doe
+- Set the password to "Password1"
+- Go to Access and set the department to SysAdmins and select Supreme Admin for the role.
+- Go to the teams section and select Level II Support, then create.
   
 After, create a second account for " John Doe"
 </p>
